@@ -1,0 +1,23 @@
+categories:
+  - name: "🎯 学習"
+    tasks:
+      - title: "Python 基礎を完了する"
+        status: done        # done | in_progress | todo
+      - title: "GitHub Actions を学ぶ"
+        status: in_progress
+      - title: "Docker 入門"
+        status: todo
+
+  - name: "🛠️ プロジェクト"
+    tasks:
+      - title: "progress-board を構築する"
+        status: in_progress
+      - title: "ポートフォリオサイトを作る"
+        status: todo
+
+  - name: "📖 読書"
+    tasks:
+      - title: "リーダブルコード"
+        status: done
+      - title: "プログラマの数学"
+        status: todo

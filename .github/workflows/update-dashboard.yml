@@ -1,0 +1,54 @@
+name: Update Progress Dashboard
+
+on:
+  # 毎日 AM 9:00 (JST) = UTC 0:00 に自動実行
+  schedule:
+    - cron: "0 0 * * *"
+
+  # tasks.yaml の変更時に実行
+  push:
+    paths:
+      - "tasks.yaml"
+    branches:
+      - main
+
+  # Issues / Milestones の変更時に実行
+  issues:
+    types: [opened, closed, deleted, reopened, labeled, milestoned]
+  milestone:
+    types: [created, closed, opened, deleted]
+
+  # 手動実行も可能
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_dashboard.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "📊 Update progress dashboard"
+          git push
