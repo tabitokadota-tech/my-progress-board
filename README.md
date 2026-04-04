@@ -1,6 +1,6 @@
 # 📊 My Progress Board
 
-> 最終更新: まだ自動更新されていません
+> 最終更新: 2026-04-05 08:27 (JST)
 
 自分の学習やプロジェクトの進捗を一目で確認できるダッシュボードです。
 GitHub Actions により自動更新されます。
@@ -35,8 +35,16 @@ GitHub Actions により自動更新されます。
 
 ## 📈 GitHub 連携
 
-> ⚠️ GitHub にプッシュして Actions が実行されると、Issues とマイルストーンのデータが自動的に反映されます。
+### 📋 Issues
+
+`░░░░░░░░░░░░░░░░░░░░` 0 / 0 (0%)
+
+| 状態 | 件数 |
+|------|------|
+| ✅ Closed | 0 |
+| 🔓 Open   | 0 |
+
 
 ---
 
-🤖 このREADMEは [GitHub Actions](.github/workflows/update-dashboard.yml) で自動生成されています
+<sub>🤖 このREADMEは <a href=".github/workflows/update-dashboard.yml">GitHub Actions</a> で自動生成されています</sub>
