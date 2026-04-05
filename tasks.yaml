@@ -17,7 +17,7 @@ categories:
 
   - name: "📖 読書"
     tasks:
-      - title: "リーダブルコード"
-        status: done
+      - title: "組織の違和感"
+        status: in_progress
       - title: "プログラマの数学"
         status: todo
