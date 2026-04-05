@@ -13,7 +13,7 @@ categories:
       - title: "progress-board を構築する"
         status: in_progress
       - title: "ポートフォリオサイトを作る"
-        status: todo
+        status: done
 
   - name: "📖 読書"
     tasks:
