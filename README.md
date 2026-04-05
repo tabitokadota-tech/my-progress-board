@@ -39,12 +39,13 @@ GitHub Actions により自動更新されます。
 
 `░░░░░░░░░░░░░░░░░░░░` 0 / 0 (0%)
 
-| 状態 | 件数 |
-|------|------|
-| ✅ Closed | 0 |
-| 🔓 Open   | 0 |
+
+| 状態       | 件数  |
+| -------- | --- |
+| ✅ Closed | 0   |
+| 🔓 Open  | 0   |
 
 
 ---
 
-<sub>🤖 このREADMEは <a href=".github/workflows/update-dashboard.yml">GitHub Actions</a> で自動生成されています</sub>
+🤖 このREADMEは [GitHub Actions](.github/workflows/update-dashboard.yml) で自動生成されています
